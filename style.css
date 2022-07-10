@@ -43,6 +43,7 @@
         max-width: 1080px;
         padding: 0 15px;
         margin: 0 auto;
+        overflow: hidden;
        
     }
     
@@ -316,6 +317,7 @@
     .main-sreen__container {
         display: flex;
         position: relative;
+        overflow: visible;
     }
     
     .main-sreen__container::before {
