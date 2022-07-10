@@ -43,7 +43,7 @@
         max-width: 1080px;
         padding: 0 15px;
         margin: 0 auto;
-        overflow: hidden;
+       
     }
     
     button {
@@ -1126,7 +1126,9 @@
         background-color: #FAFAFA;
         padding: 25px 0;
     }
-    
+    .footer__bottom .container {
+    overflow: hidden;
+      }
     .copy {
         text-align: center;
         font-weight: 600;
