@@ -10,8 +10,9 @@ burgerBtn.addEventListener('click', (e) => {
             navBar.classList.toggle('menu_active');
         }, 400)
     } else {
+
         navBar.classList.toggle('menu_active');
-        burgerBtn.classList.toggle('burger_active');
     }
 
+    burgerBtn.classList.toggle('burger_active');
 })
