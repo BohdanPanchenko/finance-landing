@@ -1,0 +1,146 @@
+body.light,
+body.light .wrapper {
+    background-color: #252B42;
+}
+
+.light .header {
+    background: #FAFAFA;
+}
+
+.light .header__logo {
+    color: #252B42;
+}
+
+.light .menu__item a {
+    color: #737373;
+}
+
+.light .menu__item a:hover {
+    color: #000;
+    text-decoration: underline 2px #737373;
+}
+
+.light .header__btn:nth-child(1) {
+    color: #23A6F0;
+}
+
+.light .burger>* {
+    background-color: #737373;
+}
+
+.light .main-screen {
+    background: #FAFAFA;
+}
+
+.light .main-screen__title {
+    color: #252B42;
+}
+
+.light .main-screen__description {
+    color: #737373;
+}
+
+.light .main-screen__btn:nth-child(2) {
+    color: #23A6F0;
+    border: 1px solid #23A6F0;
+}
+
+
+/* -------------------------------------------------------- */
+
+.light .features {
+    background-color: #fff;
+}
+
+.light .block-header__title {
+    color: #252B42;
+}
+
+.light .block-header__description {
+    color: #737373;
+}
+
+.light .item-features {
+    background-color: #FAFAFA;
+}
+
+.light .item-features__title {
+    color: #252B42;
+}
+
+.light .item-features__description {
+    color: #737373;
+}
+
+.light .item-features {
+    background-color: rgb(250, 250, 250);
+    border-bottom: 7px solid white;
+    border-radius: 30px;
+}
+
+
+/* ---------------------------------------------------------- */
+
+.light .testimonials {
+    background: #FAFAFA;
+    padding: 112px 0 0;
+}
+
+.light .testimonials__item {
+    box-shadow: 0px 0px 8px 0px rgba(34, 60, 80, 0.2);
+    margin-bottom: 112px;
+}
+
+
+/* --------------------------------------------------------------------- */
+
+.light .application {
+    background-color: #FAFAFA;
+    background-color: #fff;
+}
+
+
+/* ------------------------------------------------------------------------- */
+
+.light .pricing {
+    background-color: #FAFAFA;
+}
+
+.light .all-over-the-world {
+    background-color: #FAFAFA;
+}
+
+.light .appointment__form-wrapper {
+    box-shadow: 0px 0px 8px 0px rgba(34, 60, 80, 0.2);
+}
+
+.light .footer {
+    background: #FAFAFA;
+}
+
+.light .footer__bottom {
+    background-color: #fff;
+}
+
+.light .menu-footer__item:first-child {
+    color: #252B42;
+}
+
+.light .menu-footer__link {
+    color: #737373;
+}
+
+.light .menu-footer__link:hover {
+    color: #000;
+    text-decoration: underline 2px #737373;
+}
+
+.light .menu-footer__description:hover {
+    text-decoration: none;
+    color: #737373;
+    cursor: unset;
+}
+
+* {
+    transition: 0.7s;
+}
