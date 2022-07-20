@@ -16,3 +16,14 @@ burgerBtn.addEventListener('click', (e) => {
 
     burgerBtn.classList.toggle('burger_active');
 })
+
+
+
+
+
+const colorScheme = document.querySelector('.header__color-scheme');
+colorScheme.addEventListener('click', (e) => {
+    document.body.classList.toggle('light');
+    colorScheme.classList.toggle('light');
+
+})

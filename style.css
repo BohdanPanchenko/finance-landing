@@ -44,7 +44,6 @@
         padding: 0 15px;
         margin: 0 auto;
         overflow: hidden;
-       
     }
     
     button {
@@ -185,6 +184,22 @@
         right: 25px;
     }
     
+    .header__color-scheme {
+        line-height: 0;
+        margin: 0 0 0 15px;
+        cursor: pointer;
+        width: 32px;
+        height: 32px;
+        transition: 0.9s;
+        background-repeat: no-repeat;
+        background-position: left top;
+        background-image: url("data:image/svg+xml,%3Csvg width='32' height='32' viewBox='0 0 32 32' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M15 2.5C15 3.9 15.5 5 16 5C16.6 5 17 3.9 17 2.5C17 1.1 16.6 -7.45058e-08 16 -7.45058e-08C15.5 -7.45058e-08 15 1.1 15 2.5Z' fill='white'/%3E%3Cpath d='M5.20001 6.09999C5.40001 6.79999 6.20001 7.59999 6.90001 7.79999C7.70001 8.09999 8.10001 7.69999 7.80001 6.89999C7.60001 6.19999 6.80001 5.39999 6.10001 5.19999C5.30001 4.89999 4.90001 5.29999 5.20001 6.09999Z' fill='white'/%3E%3Cpath d='M24.5 6.1C23.3 8 25 8.4 26.7 6.7C28.3 5.1 28.3 5 26.8 5C25.9 5 24.8 5.5 24.5 6.1Z' fill='white'/%3E%3Cpath d='M10.5 10.5C5.49999 15.4 8.99999 24 16 24C23 24 26.5 15.4 21.5 10.5C20 8.9 17.9 8 16 8C14.1 8 12 8.9 10.5 10.5ZM20.2 11.7C22.4 13.7 22.5 17.8 20.3 20.2C16.9 24 9.99999 21.3 9.99999 16.2C9.99999 10.8 16.2 8.1 20.2 11.7Z' fill='white'/%3E%3Cpath d='M0 16C0 16.5 1.1 17 2.5 17C3.9 17 5 16.5 5 16C5 15.4 3.9 15 2.5 15C1.1 15 0 15.4 0 16Z' fill='white'/%3E%3Cpath d='M27 16C27 16.5 28.1 17 29.5 17C30.9 17 32 16.5 32 16C32 15.4 30.9 15 29.5 15C28.1 15 27 15.4 27 16Z' fill='white'/%3E%3Cpath d='M5.7 24.7C5.3 25 5 26 5 26.8C5 28 5.3 28 6.5 27C7.3 26.3 8 25.4 8 24.9C8 23.8 6.6 23.7 5.7 24.7Z' fill='white'/%3E%3Cpath d='M24.2 25.1C24.4 25.8 25.2 26.6 25.9 26.8C26.7 27.1 27.1 26.7 26.8 25.9C26.6 25.2 25.8 24.4 25.1 24.2C24.3 23.9 23.9 24.3 24.2 25.1Z' fill='white'/%3E%3Cpath d='M15 29.5C15 30.9 15.5 32 16 32C16.6 32 17 30.9 17 29.5C17 28.1 16.6 27 16 27C15.5 27 15 28.1 15 29.5Z' fill='white'/%3E%3C/svg%3E%0A");
+    }
+    
+    .header__color-scheme.light {
+        background-image: url("data:image/svg+xml,%3Csvg width='30' height='32' viewBox='0 0 30 32' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M9.50001 1.4C7.80001 2.1 5.20001 4.2 3.70001 5.9C-4.89999 16.1 2.80001 32.1 16.2 32C20 32 26.7 28.5 28.6 25.5C29.9 23.5 29.8 23.4 26.6 23.8C19.5 24.6 12.8 18.7 12.8 11.6C12.8 7.7 15.3 2.5 17.7 1.1C20.5 -0.500002 13.2 -0.200002 9.50001 1.4Z' fill='%23252B42'/%3E%3C/svg%3E%0A");
+    }
+    
     .burger {
         flex-direction: column;
         row-gap: 3px;
@@ -224,19 +239,19 @@
     
     .burger_active>:nth-child(1) {
         width: 22px;
-        transform: rotate(45deg);
+        transform: rotate(-45deg);
     }
     
     .burger_active>:nth-child(2) {
         width: 22px;
-        transform: rotate(-45deg);
+        transform: rotate(45deg);
     }
     
     .burger_active>:nth-child(3) {
         display: none;
     }
     
-    @media(max-width:946px) {
+    @media(max-width:1000px) {
         .header__container {
             flex-wrap: wrap;
             justify-content: center;
@@ -244,6 +259,7 @@
         }
         .header__actions {
             width: 50%;
+            justify-content: center;
         }
         .header__btn {}
         .menu {
@@ -258,6 +274,9 @@
     }
     
     @media(max-width:580px) {
+        .header__color-scheme {
+            display: none;
+        }
         .header__container {
             justify-content: space-between;
         }
@@ -697,6 +716,7 @@
     }
     
     .application__item {
+        background-color: #FFFFFF;
         line-height: 0;
         box-sizing: border-box;
         padding: 17px 28px;
@@ -1099,17 +1119,19 @@
         margin-bottom: 10px;
     }
     
-
-        .menu-footer__description {
+    .menu-footer__description {
         font-weight: 500;
         line-height: 143%;
         margin-top: 25px;
         margin-bottom: 25px !important;
+        pointer-events: none;
     }
     
     .menu-footer__description:hover {
         text-decoration: none;
+        cursor: unset;
     }
+    
     .social-list {
         display: flex;
         column-gap: 20px;
@@ -1132,9 +1154,11 @@
         background-color: #FAFAFA;
         padding: 25px 0;
     }
+    
     .footer__bottom .container {
-    overflow: hidden;
-      }
+        overflow: hidden;
+    }
+    
     .copy {
         text-align: center;
         font-weight: 600;
