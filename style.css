@@ -509,7 +509,9 @@
         background-color: #252B42;
         padding: 141px 0 39px 0;
     }
-    
+    .features__container{
+           overflow: visible;
+    }
     .features__block-header {
         margin-bottom: 69px;
     }
