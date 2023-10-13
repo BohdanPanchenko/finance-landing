@@ -43,7 +43,7 @@
         max-width: 1080px;
         padding: 0 15px;
         margin: 0 auto;
-        overflow: hidden;
+/*         overflow: hidden; */
     }
     
     button {
